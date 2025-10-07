@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import 'tailwindcss';
+
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+
+
+  /* Color Palette */
+  --color-primary-light: #ffff; /* White */
+  --color-primary-dark: #01203F; /* Midnight */
+  --color-primary: #01203F;
+
+
+  /* Responsive Breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
+
+
+
+
+  --color-background-primary: #111111;
+  --color-background-secondary: #1C1C1C;
+
+}
+
+.navbox {
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbox-open {
+  animation: slideDown 0.4s ease forwards;
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: var(--color-background-primary);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+@keyframes shadow-rotate {
+    0% {
+        box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.8);
+        transform: rotate(0deg);
+    }
+    25% {
+        box-shadow: 15px 0 15px 2px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+        box-shadow: 0 15px 15px 2px rgba(255, 255, 255, 0.8);
+    }
+    75% {
+        box-shadow: -15px 0 15px 2px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 -15px 15px 2px rgba(255, 255, 255, 0.8);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse-slow {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.animate-shadow-rotate {
+    animation: shadow-rotate 3s linear infinite;
+}
+
+.animate-pulse-slow {
+    animation: pulse-slow 2s ease-in-out infinite;
+}
+
+/* Responsive text sizes */
+@media (max-width: 640px) {
+    .hero-name {
+        font-size: 44px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    .hero-name {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-name {
+        font-size: 72px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .hero-name {
+        font-size: 92px;
+    }
+}

@@ -8,15 +8,15 @@ export default function Navbar() {
     px-3 py-2 text-sm lg:text-base font-medium rounded-full border border-primary-light
     ${isActive 
       ? "bg-primary-light text-primary-dark"
-      : "text-primary-light hover:bg-primary-light hover:text-primary-dark transition-colors duration-300"
+      : "text-primary-light hover:bg-primary-light hover:text-primary-dark transition-colors ease-in duration-400"
     }
   `;
 
   return (
     <nav className={`
       bg-background-secondary 
-      fixed w-full z-50 mt-6 
-      border-none ]
+      relative z-50 top-6
+      border-none
       ${isOpen ? 'rounded-4xl navbox-open transition-all duration-100 ease-in-out' : 'rounded-full'} navbox 
     `}>
       <div className="maxw-full mx-auto px-2 lg:px-5 ">
@@ -71,7 +71,7 @@ export default function Navbar() {
               isOpen ? "navbox-open" : "hidden"
             } w-full lg:flex lg:w-auto lg:items-center`}
           >
-            <div className="flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-0 items-center pt-2 pb-5 lg:py-1">
+            <div className="flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-0 items-center w-full absolute bg-background-secondary pt-2 pb-5 lg:py-1">
               {[
                 { name: "Home", path: "/" },
                 { name: "About", path: "/about" },

@@ -1,44 +1,47 @@
 export default function Home() {
     return(
-        <section className="max-w-full items-center flex flex-col  justify-center text-primary-light  ">
-
+        <section className="relative max-w-full items-center flex flex-col justify-center text-primary-light  ">
             {/* Hero Section */}
-            <div className="mt-30 lg:mt-40 ">
-                <div className=" ">
-                    <img src="/Profile_image2.jpg" alt="Profile Image" className="w-[240px] h-[240px] md:w-[300px] md:h-[300px] lg:w-[360px] lg:h-[360px] rounded-2xl" />
+            <div className="relative flex flex-col items-center justify-center ">
+                <div className="absolute z-0 top-16 md:top-26  ">
+                    <img src="/Profile_image2.jpg" alt="Profile Image" className="w-[240px] md:w-[300px] lg:w-[360px]  rounded-2xl" />
                 </div>
 
-                
-                <div className="text-center mt-9 text-base lg:text-[24px] bg-background-secondary  flex border border-bg-primary-light p-3 rounded-full  justify-center items-center gap-3">
-                <p className="max-w-full text-[40px] md:text-[80px] lg:text-[105px] xl:text-[130px] absolute font-bold font-inter mt-6 top-78 lg:top-110 text-center">
+                <p className="max-w-full relative text-[35px] sm:text-[60px] md:text-[75px] lg:text-[100px] xl:text-[120px]  font-bold font-inter  mt-[280px] sm:mt-[270px] md:mt-[350px] lg:mt-[400px] xl:mt-[380px]  text-center z-10 ">
                     IFEANYI JONATHAN
                 </p>
+ 
+                {/* Availability status */}
+                <div className="w-[220px] md:w-[246px]  text-center mt-4 text-[18px] bg-background-secondary  flex border border-bg-primary-light p-3 rounded-full  justify-center items-center gap-3 z-10 ">
+
                     {/* Status Indicator */}
-                    <div className="relative flex items-center justify-center">
+                    <div className="relative flex justify-center gap-3">
                         {/* Outer dotted circle */}
-                        <div className="w-3 h-3 rounded-full border-2 border-dotted border-green-500 flex items-center justify-center">
+                        <div className="w-3 h-3 rounded-full border-2  border-green-500 flex items-center justify-center">
                             {/* Inner solid circle */}
-                            <div className="w-1.5 h-1.5 rounded-full bg-green-300"></div>
+                            <div className="w-2 h-2 rounded-full bg-green-300"></div>
                         </div>
                     </div>
-
                     <span font-inter> Available for Work </span>
 
+
                 </div>
+                {/* Hero Statement */}
+                <p className="max-w-full md:w-[560px] mt-6 text-center text-primary-light text-[18px]">
+                    I am a dedicated web designer and developer, deeply committed to the principles of minimalist design. With more than 5 years of hands-on experience in the industry.
+                </p>
+
+                <p className="max-w-full mt-6 text-center text-primary-light text-[18px] underline underline-offset-5 "> More about Me</p>
 
 
-                {/* <div class="relative h-64">
-                <img
-                    class="absolute inset-0 h-full w-full object-cover"
-                    src="/Profile_image2.jpg"
-                    alt="Image description"
-                />
-                <div class="absolute inset-0 flex items-center justify-center p-4">
-                    <h1 class="text-3xl font-bold text-white">This is overlaid text</h1>
+            </div>
+
+            {/* Stats */}
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 mt-16 mb-20">
+                <div className="bg-background-secondary  p-6 rounded-full flex flex-col items-center">
+                    <p className="text-primary-light text-[18px]">My Stats</p>
+
                 </div>
-                </div> */}
-
-
             </div>
 
             

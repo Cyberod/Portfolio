@@ -71,7 +71,7 @@ export default function Navbar() {
               isOpen ? "navbox-open" : "hidden"
             } w-full lg:flex lg:w-auto lg:items-center`}
           >
-            <div className="flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-0 items-center w-full absolute bg-background-secondary pt-2 pb-5 lg:py-1">
+            <div className="flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-0 items-center w-full bg-background-secondary pt-2 pb-5 lg:py-1">
               {[
                 { name: "Home", path: "/" },
                 { name: "About", path: "/about" },

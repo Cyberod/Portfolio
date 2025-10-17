@@ -58,5 +58,29 @@ body {
 }
 
 
+.underline-animate-hide::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1.5px;
+  background-color: var(--color-primary-light);
+  transition: width 0.3s ease-in-out;
+}
+
+.underline-animate-hide:hover::after {
+  width: 0%;
+}
+
+
+
+
+/* === Arrow tilt effect === */
+.arrow-tilt {
+  transform: rotate(-30deg); /* initial acute angle */
+}
+
 
 

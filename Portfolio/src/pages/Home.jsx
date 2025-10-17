@@ -1,3 +1,7 @@
+import Stats from "../components/Stats";
+import Projects from "../components/Projects";
+import ArrowLink from "../components/ArrowLink";
+
 export default function Home() {
     return(
         <section className="relative max-w-full items-center flex flex-col justify-center text-primary-light  ">
@@ -22,7 +26,7 @@ export default function Home() {
                             <div className="w-2 h-2 rounded-full bg-green-300"></div>
                         </div>
                     </div>
-                    <span font-inter> Available for Work </span>
+                    <span font-inter> Available for Work</span>
 
 
                 </div>
@@ -31,18 +35,15 @@ export default function Home() {
                     I am a dedicated web designer and developer, deeply committed to the principles of minimalist design. With more than 5 years of hands-on experience in the industry.
                 </p>
 
-                <p className="max-w-full mt-6 text-center text-primary-light text-[18px] underline underline-offset-5 "> More about Me</p>
+                <ArrowLink href="/projects" text="More About Me" className="flex justify-between mt-6 max-w-full" />
 
 
             </div>
+            <Stats />
+            <Projects />
 
-            {/* Stats */}
-            <div className="flex flex-col md:flex-row items-center justify-center gap-6 mt-16 mb-20">
-                <div className="bg-background-secondary  p-6 rounded-full flex flex-col items-center">
-                    <p className="text-primary-light text-[18px]">My Stats</p>
 
-                </div>
-            </div>
+
 
             
 

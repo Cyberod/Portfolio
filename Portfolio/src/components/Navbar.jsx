@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav className={`
       bg-background-secondary 
       relative z-50 top-6
-      border-none
+      border-none mx-4
       ${isOpen ? 'rounded-4xl navbox-open transition-all duration-100 ease-in-out' : 'rounded-full'} navbox 
     `}>
       <div className="maxw-full mx-auto px-2 lg:px-5 ">

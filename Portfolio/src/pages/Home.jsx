@@ -1,12 +1,17 @@
 import Stats from "../components/Stats";
 import Projects from "../components/Projects";
 import ArrowLink from "../components/ArrowLink";
+import Services from "../components/Services";
+import Cta from "../components/Cta";
+import Footer from "../components/Footer";
+import WorkStatus from "../components/WorkStatus";
+
 
 export default function Home() {
     return(
         <section className="relative max-w-full items-center flex flex-col justify-center text-primary-light  ">
             {/* Hero Section */}
-            <div className="relative flex flex-col items-center justify-center ">
+            <div className="relative flex flex-col items-center justify-center px-4">
                 <div className="absolute z-0 top-16 md:top-26  ">
                     <img src="/Profile_image2.jpg" alt="Profile Image" className="w-[240px] md:w-[300px] lg:w-[360px]  rounded-2xl" />
                 </div>
@@ -16,20 +21,10 @@ export default function Home() {
                 </p>
  
                 {/* Availability status */}
-                <div className="w-[220px] md:w-[246px]  text-center mt-4 text-[18px] bg-background-secondary  flex border border-bg-primary-light p-3 rounded-full  justify-center items-center gap-3 z-10 ">
-
-                    {/* Status Indicator */}
-                    <div className="relative flex justify-center gap-3">
-                        {/* Outer dotted circle */}
-                        <div className="w-3 h-3 rounded-full border-2  border-green-500 flex items-center justify-center">
-                            {/* Inner solid circle */}
-                            <div className="w-2 h-2 rounded-full bg-green-300"></div>
-                        </div>
-                    </div>
-                    <span font-inter> Available for Work</span>
+                <WorkStatus />
 
 
-                </div>
+                
                 {/* Hero Statement */}
                 <p className="max-w-full md:w-[560px] mt-6 text-center text-primary-light text-[18px]">
                     I am a dedicated web designer and developer, deeply committed to the principles of minimalist design. With more than 5 years of hands-on experience in the industry.
@@ -41,6 +36,9 @@ export default function Home() {
             </div>
             <Stats />
             <Projects />
+            <Services />
+            <Cta />
+            <Footer/>
 
 
 

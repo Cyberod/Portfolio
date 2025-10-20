@@ -28,9 +28,9 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full text-primary-light  border-opacity-10">
+    <footer className="w-full text-primary-light px-4 lg:px-8 xl:px-10 border-opacity-10">
       {/* Main Footer Content */}
-      <div className="w-full px-4 py-8 lg:py-12">
+      <div className="w-full px-4 lg:px-10 py-8 lg:py-12">
         {/* Mobile & Tablet Layout (sm to lg) */}
         <div className="flex flex-col items-center gap-6 lg:hidden">
           {/* Name */}

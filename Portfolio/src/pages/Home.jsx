@@ -26,7 +26,7 @@ export default function Home() {
 
                 
                 {/* Hero Statement */}
-                <p className="max-w-full md:w-[560px] mt-6 text-center text-primary-light text-[18px]">
+                <p className="max-w-full md:w-[560px] mt-6 text-center text-primary-light text-[16px] md:text-[18px]">
                     I am a dedicated web designer and developer, deeply committed to the principles of minimalist design. With more than 5 years of hands-on experience in the industry.
                 </p>
 

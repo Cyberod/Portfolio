@@ -10,7 +10,7 @@ export default function About() {
         <div className="px-4 lg:px-8 xl:px-10">
             {/* Hero Section */}
             <div className="relative flex flex-col items-center justify-center text-center mt-20">
-                <h1 className="text-[35px] sm:text-[60px] md:text-[75px] lg:text-[100px] xl:text-[120px] font-bold font-inter">
+                <h1 className="text-[35px] sm:text-[60px] md:text-[75px] lg:text-[100px] xl:text-[120px] font-bold font-inter ">
                 ABOUT JONATHAN
                 </h1>
                 <p className="max-w-[464px] mt-6 text-[16px] md:text-[18px] font-inter leading-relaxed">
@@ -44,7 +44,7 @@ export default function About() {
             </div>
 
             {/* Stats Section */}
-            <div className="w-full mt-20">
+            <div className="w-full px-6">
                 <Stats />
             </div>
 

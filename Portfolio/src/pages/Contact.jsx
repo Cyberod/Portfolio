@@ -61,7 +61,7 @@ export default function Contact() {
                                 id="name"
                                 name="name"
                                 placeholder="Name"
-                                className="w-full px-4 py-3 rounded-xl bg-background-secondary  focus:outline-none"
+                                className="w-full px-4 py-3 rounded-4xl bg-background-secondary  focus:outline-none"
                             />
                             </div>
 
@@ -77,7 +77,7 @@ export default function Contact() {
                                 id="email"
                                 name="email"
                                 placeholder="Email"
-                                className="w-full px-4 py-3 rounded-xl bg-background-secondary  focus:outline-none"
+                                className="w-full px-4 py-3 rounded-4xl bg-background-secondary  focus:outline-none"
                             />
                             </div>
 
@@ -94,7 +94,7 @@ export default function Contact() {
                                 name="message"
                                 placeholder="Message"
                                 rows="6"
-                                className="w-full px-4 py-3 rounded-xl bg-background-secondary  focus:outline-none resize-none"
+                                className="w-full px-4 py-3 rounded-4xl bg-background-secondary  focus:outline-none resize-none"
                             />
                             </div>
 

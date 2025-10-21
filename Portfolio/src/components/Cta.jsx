@@ -2,7 +2,7 @@ import WorkStatus from "./WorkStatus";
 
 export default function Cta() {
   return (
-    <section className="my-background-section w-full h-[500px] xl:h-[700px] flex flex-col items-center justify-center gap-4">
+    <section className="my-background-section w-full h-[500px] xl:h-[700px] flex flex-col items-center justify-center gap-4 mt-20">
       <div className="flex flex-col items-center">
         {/* Availability status */}
         <WorkStatus />

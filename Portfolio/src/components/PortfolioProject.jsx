@@ -1,9 +1,8 @@
 
 import SectionHeader from "./SectionHeader";
-import ArrowLink from "./ArrowLink";
 import ProjectCta from "./ProjectCta";
 
-export default function Projects() {
+export default function PortfolioProjects() {
   const projects = [
     {
       id: 1,
@@ -29,18 +28,16 @@ export default function Projects() {
   ];
 
   return (
-    <section className="w-full flex flex-col items-center mt-20 px-4 lg:px-8 xl:px-10 pt-10">
+    <section className="w-full flex flex-col items-center px-4 lg:px-8 xl:px-10">
       {/* Header & More Button Row */}
       <div className="px-4 lg:px-8 xl:px-10">
-        <div className="w-full flex flex-col items-center justify-between lg:flex-row">
-          <SectionHeader title="Selected Projects" />
 
-          {/* More Projects Link */}
-          <ArrowLink href="/projects" text="More Projects" className="hidden lg:flex text-[18px] mt-6 xl:mt-0" />
+        <div className="flex justify-center lg:justify-start w-full mb-10">
+            <SectionHeader title="My Projects" />
         </div>
 
         {/* Project Grid */}
-        <div className="w-full grid grid-cols-1  gap-10 mt-10">
+        <div className="w-full grid grid-cols-1 xl:grid-cols-2  gap-10 mt-10">
           {projects.map((project) => (
             <div
               key={project.id}
@@ -61,11 +58,11 @@ export default function Projects() {
                   <h3 className="text-primary-light text-lg font-medium">
                     {project.name}
                   </h3>
-                  <div className="lg:flex hidden justify-between gap-3 ">
+                  <div className="lg:flex  justify-between gap-3 ">
 
-                  <ProjectCta href="#" text="Source Code" className="" />
+                  <ProjectCta href="#" text="" className="" />
 
-                  <ProjectCta href="#" text="Live Demo" className="" />
+ 
                   
                   </div>
                 </div>
@@ -81,26 +78,12 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                {/* Mobile CTA Buttons */}
-                  <div className="flex lg:hidden justify-between gap-2 mt-4 ">
 
-                  <ProjectCta href="#" text="Source Code" className="" />
-
-                  <ProjectCta href="#" text="Live Demo" className="" />
-                  
-                  </div>
               </div>
             </div>
           ))}
         </div>
-          <a
-            href="/projects"
-            className="group  items-center gap-2 text-primary-light flex lg:hidden text-[15px] mt-6 xl:mt-0 transition-all underline underline-offset-5  duration-300"
-          >
-            More Projects
-          <img src="/arrow.svg" alt="" />
 
-          </a>
       </div>
 
     </section>

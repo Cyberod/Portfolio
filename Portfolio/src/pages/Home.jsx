@@ -17,6 +17,7 @@ export default function Home() {
                         <img src="/Profile_image2.jpg" alt="Profile Image" className="w-[240px] md:w-[300px] lg:w-[360px]  rounded-2xl" />
                     </div>
 
+                    {/* Page Heading */}
                     <p className="max-w-full relative text-[35px] sm:text-[60px] md:text-[75px] lg:text-[100px] xl:text-[120px]  font-bold font-inter  mt-[280px] sm:mt-[270px] md:mt-[350px] lg:mt-[400px] xl:mt-[380px]  text-center z-10 ">
                         IFEANYI JONATHAN
                     </p>

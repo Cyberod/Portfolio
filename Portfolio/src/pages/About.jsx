@@ -72,6 +72,31 @@ export default function About() {
                 </div>
             </div>
 
+            {/* Certification section */}
+            <div className="w-full mt-20 px-4 lg:px-10 flex flex-col xl:flex-row xl:justify-between lg:items-start gap-6">
+                <div className="flex justify-center lg:justify-start w-full">
+                <SectionHeader title="Certifications" />
+                </div>
+
+                <div className="text-[16px] lg:text-[18px] font-inter font-semibold leading-relaxed w-full flex flex-col gap-6 lg:gap-2">
+
+                    <div className="flex flex-col items-center text-left lg:mb-10">
+                        <p className="mb-2">ALX, Software Engineer</p>
+                        <a href="https://drive.google.com/file/d/1BmYaezjD_EfGGRQILvGng2V1JaPVCGiv/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <img src="/MY_ALX_CERT.png" alt="Software Engineer Cert" className="w-[250px] sm:w-[464px] xl:w-full" />
+                        </a>
+                    </div>
+
+                    <div className="flex flex-col items-center text-left">
+                        <p className="mb-2">Google, Project Manager</p>
+                        <a href="https://drive.google.com/file/d/1BmYaezjD_EfGGRQILvGng2V1JaPVCGiv/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <img src="/PM_certificate.png" alt="Project Manager Cert" className="w-[250px] sm:w-[464px] xl:w-full" />
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
         <Cta />

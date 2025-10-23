@@ -71,9 +71,9 @@ export default function Footer() {
           <div className="footer-divider"></div>
 
           {/* Copyright & Created By - Justified */}
-          <div className="flex flex-col items-center">
-            <span className="text-sm">Created by Jonathan</span>
-            <span className="text-sm">© 2025 IFEANYI JONATHAN. All rights reserved.</span>
+          <div className="flex flex-col items-center gap-2">
+            <span className="text-sm text-center">Created by Jonathan</span>
+            <span className="text-sm text-center">© 2025 IFEANYI JONATHAN. All rights reserved.</span>
           </div>
         </div>
 

@@ -2,6 +2,8 @@
 import SectionHeader from "./SectionHeader";
 import ArrowLink from "./ArrowLink";
 import ProjectCta from "./ProjectCta";
+import { Link } from "react-router-dom";
+
 
 export default function Projects() {
   const projects = [
@@ -36,22 +38,23 @@ export default function Projects() {
           <SectionHeader title="Selected Projects" />
 
           {/* More Projects Link */}
-          <ArrowLink href="/projects" text="More Projects" className="hidden lg:flex text-[18px] mt-6 xl:mt-0" />
+          <ArrowLink href="/portfolio" text="More Projects" className="hidden lg:flex text-[18px] mt-6 xl:mt-0" />
         </div>
 
         {/* Project Grid */}
         <div className="w-full grid grid-cols-1  gap-10 mt-10">
           {projects.map((project) => (
-            <div
+            <Link
               key={project.id}
-              className=" bg-background-secondary rounded-2xl navbox overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+              to={`/project/${project.id}`}
+              className=" bg-background-secondary rounded-2xl navbox overflow-hidden shadow-md hover:shadow-lg  transform transition-transform duration-400 ease-in-out hover:scale-102"
             >
               {/* Project Image */}
               <div className="overflow-hidden">
               <img
                 src={project.image}
                 alt={project.name}
-                className="w-full h-auto transform transition-transform duration-400 ease-in-out hover:scale-102"
+                className="w-full h-auto "
               />
               </div>
 
@@ -61,12 +64,11 @@ export default function Projects() {
                   <h3 className="text-primary-light text-lg font-medium">
                     {project.name}
                   </h3>
-                  <div className="lg:flex hidden justify-between gap-3 ">
+                  <div className="lg:flex  justify-between gap-3 ">
 
-                  <ProjectCta href="#" text="Source Code" className="" />
-
-                  <ProjectCta href="#" text="Live Demo" className="" />
-                  
+                  <Link to={`/project/${project.id}`}>
+                    <ProjectCta  text="" className="" />
+                  </Link>                  
                   </div>
                 </div>
 
@@ -82,23 +84,17 @@ export default function Projects() {
                   ))}
                 </div>
                 {/* Mobile CTA Buttons */}
-                  <div className="flex lg:hidden justify-between gap-2 mt-4 ">
 
-                  <ProjectCta href="#" text="Source Code" className="" />
-
-                  <ProjectCta href="#" text="Live Demo" className="" />
-                  
-                  </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
           <a
-            href="/projects"
+            href="/portfolio"
             className="group  items-center gap-2 text-primary-light flex lg:hidden text-[15px] mt-6 xl:mt-0 transition-all underline underline-offset-5  duration-300"
           >
             More Projects
-          <img src="/arrow.svg" alt="" />
+          <img src="/arrow.svg" alt="" className="w-6 h-6 arrow-tilt group-hover:rotate-[30deg] " />
 
           </a>
       </div>

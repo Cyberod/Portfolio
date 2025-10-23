@@ -1,6 +1,7 @@
 
 import SectionHeader from "./SectionHeader";
 import ProjectCta from "./ProjectCta";
+import { Link } from "react-router-dom";
 
 export default function PortfolioProjects() {
   const projects = [
@@ -30,7 +31,7 @@ export default function PortfolioProjects() {
   return (
     <section className="w-full flex flex-col items-center px-4 lg:px-8 xl:px-10">
       {/* Header & More Button Row */}
-      <div className="px-4 lg:px-8 xl:px-10">
+      <div className="">
 
         <div className="flex justify-center lg:justify-start w-full mb-10">
             <SectionHeader title="My Projects" />
@@ -38,17 +39,19 @@ export default function PortfolioProjects() {
 
         {/* Project Grid */}
         <div className="w-full grid grid-cols-1 xl:grid-cols-2  gap-10 mt-10">
+          
           {projects.map((project) => (
-            <div
+            <Link
               key={project.id}
-              className=" bg-background-secondary rounded-2xl navbox overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+              to={`/project/${project.id}`}
+              className=" bg-background-secondary rounded-2xl navbox overflow-hidden shadow-md hover:shadow-lg transform transition-transform duration-400 ease-in-out hover:scale-102"
             >
               {/* Project Image */}
               <div className="overflow-hidden">
               <img
                 src={project.image}
                 alt={project.name}
-                className="w-full h-auto transform transition-transform duration-400 ease-in-out hover:scale-102"
+                className="w-full h-auto"
               />
               </div>
 
@@ -59,8 +62,10 @@ export default function PortfolioProjects() {
                     {project.name}
                   </h3>
                   <div className="lg:flex  justify-between gap-3 ">
-
-                  <ProjectCta href="#" text="" className="" />
+                  <Link to={`/project/${project.id}`}>
+                    <ProjectCta  text="" className="" />
+                  </Link>
+                  
 
  
                   
@@ -80,7 +85,7 @@ export default function PortfolioProjects() {
                 </div>
 
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

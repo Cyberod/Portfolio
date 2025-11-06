@@ -77,6 +77,7 @@ export default function Navbar() {
                 { name: "About", path: "/about" },
                 { name: "Portfolio", path: "/portfolio" },
                 { name: "Contact", path: "/contact" },
+                { name: "Blog", path: "/blog" },
               ].map((link) => (
                 <NavLink
                   key={link.name}

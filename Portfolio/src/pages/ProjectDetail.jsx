@@ -32,13 +32,13 @@ const projects = [
   {
     id: 2,
     name: "Taskify",
-    image: "/Cinemania.jpg",
-    images: ["/Cinemania1.jpg", "/Cinemania2.jpg", "/Cinemania3.jpg", "/Cinemania4.jpg"],
+    image: "/Taskify/taskify2.png",
+    images: ["/Taskify/taskify1.png", "/Taskify/taskify3.png", "/Taskify/taskify4.png", "/Taskify/taskify2.png"],
     description: "A movie app using TMDB API.",
     role: ["Software Engineer", "Project Manager"],
     service: ["Web Development"],
     industry: ["Entertainment"],
-    stack: ["Django", "React", "TMDB API"],
+    stack: ["Fastapi", "React", "Vite", "PostgreSql"],
     date: "Dec. 2023 - March 2024",
     overview: "Cinemania is a modern movie discovery platform leveraging the TMDB API to provide users with up-to-date movie information, reviews, and recommendations.",
     keyFeatures: [
@@ -54,7 +54,7 @@ const projects = [
 
     {
     id: 3,
-    name: "Budget Automation",
+    name: "Expense Wise",
     image: "/ExpenseWise.jpg",
     images: ["/Cinemania1.jpg", "/Cinemania2.jpg", "/Cinemania3.jpg", "/Cinemania4.jpg"],
     description: "A movie app using TMDB API.",
@@ -84,7 +84,7 @@ export default function ProjectDetail() {
   if (!project) return <div className="text-center mt-20 text-2xl">Project not found.</div>;
 
   return (
-    <section className="w-full flex flex-col items-center ">
+    <section className="w-full flex flex-col items-center px-4 lg:px-8 xl:px-10">
         <div className="px-4 lg:px-8 xl:px-10 py-10">
             {/* Project Name */}
             <h1 className="text-[35px] sm:text-[60px] md:text-[75px] lg:text-[100px] xl:text-[120px] font-bold font-inter text-center mb-6">
@@ -124,7 +124,7 @@ export default function ProjectDetail() {
 
                     <div className="flex flex-row gap-4">
                     <div className="text-[16px] mt-2">Service:</div>
-                    <div className="flex flex-shrink-0">
+                    <div className="flex xl:flex-shrink-0">
                         {project.service.map((service, idx) => (
                         <span key={idx} className="border border-white rounded-full px-4 py-2 text-white text-[16px]">
                             {service}
@@ -135,7 +135,7 @@ export default function ProjectDetail() {
 
                     <div className="flex flex-row gap-4">
                     <div className="text-[16px] mt-2">Industry:</div>
-                    <div className="flex flex-shrink-0">
+                    <div className="flex xl:flex-shrink-0">
                         {project.industry.map((industry, idx) => (
                         <span key={idx} className="border border-white rounded-full px-4 py-2 text-white text-[16px]">
                             {industry}
@@ -146,7 +146,7 @@ export default function ProjectDetail() {
 
                     <div className="flex flex-row gap-4">
                     <div className="text-[16px]  mt-2">Stack:</div>
-                    <div className="flex flex-shrink-0">
+                    <div className="flex xl:flex-shrink-0">
                         {project.stack.map((stack, idx) => (
                         <span key={idx} className="border border-white rounded-full px-4 py-2 text-white text-[16px]">
                             {stack}
@@ -157,7 +157,7 @@ export default function ProjectDetail() {
 
                     <div className="flex flex-row gap-4">
                     <div className="text-[16px] mt-2">Date:</div>
-                        <div className="flex flex-shrink-0">
+                        <div className="flex xl:flex-shrink-0">
                             <span className="border border-white rounded-full px-4 py-2 text-white text-[16px]">
                                 {project.date}
                             </span>

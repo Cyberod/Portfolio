@@ -32,7 +32,7 @@ export default function Home() {
                         I am a dedicated web designer and developer, deeply committed to the principles of minimalist design. With more than 5 years of hands-on experience in the industry.
                     </p>
 
-                    <ArrowLink href="/projects" text="More About Me" className="flex justify-between mt-6 max-w-full" />
+                    <ArrowLink href="/about" text="More About Me" className="flex justify-between mt-6 max-w-full" />
 
 
                 </div>

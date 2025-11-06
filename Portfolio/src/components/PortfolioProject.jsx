@@ -15,7 +15,7 @@ export default function PortfolioProjects() {
     {
       id: 2,
       name: "Taskify",
-      image: "",
+      image: "/Taskify/taskify2.png",
       stacks: ["FastAPI", "React", "PostgreSQL"],
       link: "",
     },

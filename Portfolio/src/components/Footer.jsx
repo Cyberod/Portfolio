@@ -18,6 +18,7 @@ export default function Footer() {
     { name: "About", path: "/about" },
     { name: "Portfolio", path: "/portfolio" },
     { name: "Contact", path: "/contact" },
+    { name: "Blog", path: "/blog" },
   ];
 
   const socialIcons = [

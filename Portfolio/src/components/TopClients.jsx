@@ -12,8 +12,11 @@ export default function TopClients() {
     </div>
     <div>
         {/* Client Logos */}
-        <div className="w-full flex flex-wrap items-center justify-center lg:justify-start gap-8 mt-10">
+        <div className="w-full flex flex-wrap items-center justify-center lg:justify-start gap-16 mt-10">
             <img src="/Mouau_logo.jpg" alt="Client 1" className="h-12 object-contain rounded-50%" />
+            <img src="/munaa.png" alt="Client 2" className="h-12 object-contain rounded-50%" />
+            <img src="/SupraMontem.png" alt="Client 1" className="h-12 object-contain rounded-50%" />
+
 
         </div>
     </div>

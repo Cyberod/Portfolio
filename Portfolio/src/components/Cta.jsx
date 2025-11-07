@@ -5,7 +5,8 @@ export default function Cta() {
     <section className="my-background-section w-full h-[500px] xl:h-[700px] flex flex-col items-center justify-center gap-4 mt-20">
       <div className="flex flex-col items-center">
         {/* Availability status */}
-        <WorkStatus />
+        <WorkStatus href="/contact" text="Available for Work" />
+        
 
         {/* Animated email text */}
         <div className="group relative inline-block overflow-hidden cursor-pointer mt-6">

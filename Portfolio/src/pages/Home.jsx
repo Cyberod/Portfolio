@@ -23,7 +23,7 @@ export default function Home() {
                     </p>
     
                     {/* Availability status */}
-                    <WorkStatus />
+                    <WorkStatus href="/contact" text="Available for Work" />
 
 
                     

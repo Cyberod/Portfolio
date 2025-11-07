@@ -1,8 +1,9 @@
-export default function WorkStatus() {
+export default function WorkStatus({href, text, download}) {
   return (
         
         <a
-        href="/Contact"
+        href={href}
+        download={download}
         className="w-[220px] md:w-[246px] text-center mt-4 text-[18px] bg-background-secondary flex border border-bg-primary-light p-3 rounded-full justify-center items-center gap-3 z-10 animate-breathe"
         >
         {/* Status Indicator */}
@@ -14,7 +15,7 @@ export default function WorkStatus() {
             </div>
         </div>
 
-        <span className="font-inter">Available for Work</span>
+        <span className="font-inter">{text}</span>
         </a>
     );
 }

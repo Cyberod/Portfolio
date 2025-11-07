@@ -3,6 +3,7 @@ import SectionHeader from "../components/SectionHeader";
 import Stats from "../components/Stats";
 import Cta from "../components/Cta";
 import Footer from "../components/Footer";
+import WorkStatus from "../components/WorkStatus";
 
 export default function About() {
   return (
@@ -13,10 +14,11 @@ export default function About() {
                 <h1 className="text-[35px] sm:text-[60px] md:text-[75px] lg:text-[100px] xl:text-[120px] font-bold font-inter ">
                 ABOUT JONATHAN
                 </h1>
-                <p className="max-w-[464px] mt-6 text-[16px] md:text-[18px] font-inter leading-relaxed">
+                <p className="max-w-[464px] mt-6 text-[16px] md:text-[18px] font-inter leading-relaxed mb-6">
                 Throughout my career, I have collaborated with clients from diverse industries,
                 translating their visions into polished digital solutions.
                 </p>
+                <WorkStatus href="/My_CV_Resume.pdf" text="Download CV" download="My_CV_Resume.pdf" />
             </div>
 
             <TopClients />

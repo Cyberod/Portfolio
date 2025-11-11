@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import SectionHeader from "../components/SectionHeader";
 import ArrowLink from "../components/ArrowLink";
 import ProjectCta from "../components/ProjectCta";
@@ -11,22 +11,28 @@ const projects = [
     name: "Cinemania",
     image: "/Cinemania.jpg",
     images: ["/Cinemania1.jpg", "/Cinemania2.jpg", "/Cinemania3.jpg", "/Cinemania4.jpg"],
-    description: "A movie app using TMDB API.",
-    role: ["Software Engineer", "Project Manager"],
-    service: ["Web Development"],
-    industry: ["Entertainment"],
-    stack: ["Django", "React", "TMDB API"],
+    description: "Cinemania is a modern movie discovery platform leveraging the TMDB API to provide users with up-to-date movie information, reviews, and recommendations.",
+    role: ["Fullstack Engineer", "Project Manager"],
+    service: ["Web Development", "Project Management", "Software Engineering" ],
+    industry: ["Entertainment", "Media"],
+    stack: ["Django", "JavaScript", "TMDB API", "SQlite", "CSS"],
     date: "Dec. 2023 - March 2024",
-    overview: "Cinemania is a modern movie discovery platform leveraging the TMDB API to provide users with up-to-date movie information, reviews, and recommendations.",
+    overview: "Cinemania is a dynamic web application built as a movie discovery platform, leveraging The Movie Database (TMDB) API to provide users with comprehensive access to film information. The app serves as an entertainment hub where users can explore, search, and learn about movies, with a special emphasis on Nigerian-language content (Igbo, Yoruba, Hausa) to promote local cinema.",
     keyFeatures: [
-      "Browse trending and top-rated movies",
-      "Detailed movie pages with cast and crew",
-      "User authentication and personalized watchlists",
-      "Responsive and minimalist UI"
+      "Movie Discovery Dashboard: Displays curated lists including popular, now-playing, upcoming, and top-rated movies with interactive sliders and banners.",
+      "Detailed Movie Pages: In-depth views for each film, featuring plot summaries, cast/crew details, trailers, and personalized recommendations.",
+      "Advanced Search: Full-text search functionality with pagination and AJAX-powered results for seamless browsing.",
+      "Genre-Based Filtering: Browse movies by specific genres (e.g., Action, Comedy) with dynamic loading.",
+      "Language-Specific Exploration: Dedicated sections for movies in Nigerian languages, fostering cultural representation and discovery.",
+      "Responsive Design: Mobile-friendly interface with custom sliders, lazy-loaded images, and intuitive navigation.",
+      "Pagination & AJAX Loading: Efficient handling of large datasets with infinite scroll-like behavior for better user experience."
     ],
-    mission: "Cinemania is a modern movie discovery platform leveraging the TMDB API to provide users with up-to-date movie information, reviews, and recommendations.",
-    impact: "Cinemania is a modern movie discovery platform leveraging the TMDB API to provide users with up-to-date movie information, reviews, and recommendations.",
-
+    mission: "To democratize movie discovery by creating an accessible, user-friendly platform that connects global audiences with diverse film content, while championing Nigerian cinema and enabling users to explore films they might otherwise miss.",
+    impact: [
+        "User Engagement: Facilitates informed entertainment choices, potentially increasing movie viewership and cultural awareness.",
+        "Cultural Promotion: Highlights Nigerian-language films, supporting local filmmakers and preserving cultural narrative in an increasingly globalized media landscape.",
+        "Technical Demonstration: Showcases API integration, responsive web development, and scalable web architecture, serving as a foundation for similar entertainment-focused applications.",
+    ]
   },
 
   {
@@ -34,45 +40,52 @@ const projects = [
     name: "Taskify",
     image: "/Taskify/taskify2.png",
     images: ["/Taskify/taskify2.png", "/Taskify/taskify3.png", "/Taskify/taskify4.png", "/Taskify/taskify5.png"],
-    description: "A movie app using TMDB API.",
-    role: ["Software Engineer", "Project Manager"],
-    service: ["Web Development"],
-    industry: ["Entertainment"],
-    stack: ["Django", "React", "TMDB API"],
-    date: "Dec. 2023 - March 2024",
-    overview: "Cinemania is a modern movie discovery platform leveraging the TMDB API to provide users with up-to-date movie information, reviews, and recommendations.",
+    description: "Taskify is a collaborative Project/Task management platform.",
+    role: ["Backend Engineer", "Project Manager"],
+    service: ["Web Development", "Software Engineering" , "SaaS", "Project Management"],
+    industry: ["Technology", "Enterprise Solutions"],
+    stack: ["Fastapi", "React", "Docker","PostgreSQL", "Swager UI" ],
+    date: "March. 2025 - June 2025",
+    overview: "Taskify is a collaborative Project management platform. It provides comprehensive services for user management, project collaboration, task tracking, file handling, and analytics.",
     keyFeatures: [
-      "Browse trending and top-rated movies",
-      "Detailed movie pages with cast and crew",
-      "User authentication and personalized watchlists",
-      "Responsive and minimalist UI"
+      "Authentication System: JWT-based authentication with user registration, email verification, OTP, password reset, and secure login/logout",
+      "User Management: Onboarding flows, profile management, and user analytics with activity tracking",
+      "Project Management: Create and manage projects with member invitation systems, role-based permissions, and collaborative workspaces.",
+      "Task Management: Full CRUD operations for tasks with assignment, status tracking, prioritization, and deadline management.",
+      "File Handling: Secure file upload and storage capabilities for project attachments and user documents.",
+      "Analytics Dashboard: User and project performance metrics, activity logs, and productivity insights.",
+      "Email Integration: Automated notifications for verification, invites, and system alerts.",
+      "Health Monitoring: Built-in health checks and error handling for production reliability.",
     ],
-    mission: "Cinemania is a modern movie discovery platform leveraging the TMDB API to provide users with up-to-date movie information, reviews, and recommendations.",
-    impact: "Cinemania is a modern movie discovery platform leveraging the TMDB API to provide users with up-to-date movie information, reviews, and recommendations.",
-
+    mission: "To develop a scalable, secure, and User-friendly web Application that streamlines team collaboration and task management. The project demonstrates expertise in building modern web apps that can handle real-world productivity challenges while maintaining clean UI, architecture and security best practices.",
+    impact: [
+        "The platform has been successfully deployed and integrated with a frontend application, demonstrating real-world scalability and the ability to handle user authentication, project collaboration, and data persistence at scale.",
+    ]
   },
 
     {
     id: 3,
-    name: "Budget Automation",
+    name: "ExpenseWise",
     image: "/ExpenseWise.jpg",
-    images: ["/Cinemania1.jpg", "/Cinemania2.jpg", "/Cinemania3.jpg", "/Cinemania4.jpg"],
-    description: "A movie app using TMDB API.",
-    role: ["Software Engineer", "Project Manager"],
-    service: ["Web Development"],
-    industry: ["Entertainment"],
-    stack: ["Django", "React", "TMDB API"],
-    date: "Dec. 2023 - March 2024",
-    overview: "Cinemania is a modern movie discovery platform leveraging the TMDB API to provide users with up-to-date movie information, reviews, and recommendations.",
+    images: ["/expense1.jpg", "/expense2.jpg", "/expense3.jpg", "/expense4.jpg"],
+    description: "ExpenseWise is a comprehensive web application designed for personal finance management.",
+    role: ["Fullstack Engineer", "Project Manager"],
+    service: ["Web Development", "Software Engineering" , "SaaS", "Project Management"],
+    industry: ["Fin-Tech"],
+    stack: ["Django", "JavaScript", "TMDB API", "SQLite"],
+    date: "Jan. 2025 - March 2025",
+    overview: "ExpenseWise is a comprehensive web application designed for personal finance management, enabling users to track, categorize, and analyze their expenses and income. Built with Django, it offers an intuitive interface for managing financial records, generating visualizations, and exporting data in multiple formats, all while ensuring data privacy and security.",
     keyFeatures: [
-      "Browse trending and top-rated movies",
-      "Detailed movie pages with cast and crew",
-      "User authentication and personalized watchlists",
-      "Responsive and minimalist UI"
+      "Expense and Income Management: Add, edit, delete, and categorize financial records with pagination and search functionality.",
+      "Data Visualization: Interactive pie and bar charts for expense/income distribution and summaries over the past six months.",
+      "Export Capabilities: Download data in CSV, Excel, or PDF formats for offline analysis or sharing.",
+      "User Authentication: Secure login system with role-based access, ensuring each user manages only their own data.",
+      "Customization: Support for user preferences like currency selection.",
     ],
-    mission: "Cinemania is a modern movie discovery platform leveraging the TMDB API to provide users with up-to-date movie information, reviews, and recommendations.",
-    impact: "Cinemania is a modern movie discovery platform leveraging the TMDB API to provide users with up-to-date movie information, reviews, and recommendations.",
-
+    mission: "To empower individuals to achieve financial control and literacy by providing accessible, user-friendly tools for tracking spending and income, facilitating better budgeting and decision-making.",
+    impact: [
+        "ExpenseWise promotes financial discipline by offering actionable insights through data visualizations, helping users identify spending patterns and optimize budgets. It enhances privacy with secure authentication and supports scalability for personal and potentially small business use, contributing to improved financial outcomes and reduced financial stress.",
+    ]
   },
   // ...other projects
 ];
@@ -91,7 +104,7 @@ export default function ProjectDetail() {
                 {project.name}
             </h1>
             {/* Project Description */}
-            <p className="max-w-[464px] text-center text-primary-light text-[16px] md:text-[18px] mb-8">
+            <p className="max-w-[464px] text-center  text-primary-light text-[16px] md:text-[18px] mb-8 mx-auto">
                 {project.description}
             </p>
             {/* Project Image */}
@@ -124,7 +137,7 @@ export default function ProjectDetail() {
 
                     <div className="flex flex-row gap-4">
                     <div className="text-[16px] mt-2">Service:</div>
-                    <div className="flex flex-shrink-0">
+                    <div className="flex flex-shrink-0  w-[200px] sm:w-[400px] flex-wrap">
                         {project.service.map((service, idx) => (
                         <span key={idx} className="border border-white rounded-full px-4 py-2 text-white text-[16px]">
                             {service}
@@ -145,26 +158,26 @@ export default function ProjectDetail() {
                     </div>
 
                     <div className="flex flex-row gap-4">
-                    <div className="text-[16px]  mt-2">Stack:</div>
-                    <div className="flex flex-shrink-0">
-                        {project.stack.map((stack, idx) => (
-                        <span key={idx} className="border border-white rounded-full px-4 py-2 text-white text-[16px]">
-                            {stack}
-                        </span>
-                        ))}
-                    </div>
-                    </div>
+                        <div className="text-[16px]  mt-2">Stack:</div>
+                                <div className="flex flex-shrink-0 w-[200px] sm:w-[400px] flex-wrap">
+                                    {project.stack.map((stack, idx) => (
+                                    <span key={idx} className="border border-white rounded-full px-4 py-2 text-white text-[16px]">
+                                        {stack}
+                                    </span>
+                                    ))}
+                                </div>
+                        </div>
 
-                    <div className="flex flex-row gap-4">
-                    <div className="text-[16px] mt-2">Date:</div>
-                        <div className="flex flex-shrink-0">
-                            <span className="border border-white rounded-full px-4 py-2 text-white text-[16px]">
-                                {project.date}
-                            </span>
+                        <div className="flex flex-row gap-4">
+                            <div className="text-[16px] mt-2">Date:</div>
+                                <div className="flex flex-shrink-0">
+                                    <span className="border border-white rounded-full px-4 py-2 text-white text-[16px]">
+                                        {project.date}
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                </div>
 
 
                 {/* Right: Overview and Key Features */}
@@ -183,7 +196,11 @@ export default function ProjectDetail() {
                 <p className="mb-10 text-primary-light text-[16px] md:text-[18px]">{project.mission}</p>
 
                 <div className=" mb-6  max-w-[140px]"><SectionHeader title="Impact" /></div>
-                <p className="mb-10 text-primary-light text-[16px] md:text-[18px]">{project.impact}</p>
+                    <ul className="mb-10 list-disc pl-6 space-y-2 text-primary-light text-[16px] md:text-[18px]">
+                        {project.impact.map((impacts, idx) => (
+                        <li key={idx}>{impacts}</li>
+                        ))}  
+                    </ul>             
                 </div>
             </div>
 
@@ -193,7 +210,7 @@ export default function ProjectDetail() {
                             key={idx}
                             src={img}
                             alt={`${project.name} screenshot ${idx + 1}`}
-                            className="w-full rounded-4xl shadow-lg navbox"
+                            className="w-full rounded-2xl shadow-lg navbox"
                         />
                     ))}
                 </div>
@@ -211,9 +228,10 @@ export default function ProjectDetail() {
                     .filter(p => p.id !== project.id) // Exclude current project
                     .slice(0, 2) // Show only two
                     .map(similar => (
-                        <div
+                        <Link
                         key={similar.id}
-                        className="bg-background-secondary rounded-2xl navbox overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+                        to={`/project/${similar.id}`}
+                        className="bg-background-secondary rounded-2xl navbox overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 block"
                         >
                         {/* Project Image */}
                         <div className="overflow-hidden">
@@ -235,7 +253,7 @@ export default function ProjectDetail() {
                             </div>
                             {/* Tech Stack */}
                             <div className="flex flex-row gap-0">
-                            {(similar.stacks || similar.stack || []).map((stack, index) => (
+                            {(similar.stacks || similar.stack || []).slice(0, 3).map((stack, index) => (
                                 <span
                                 key={index}
                                 className="text-sm text-primary-light/80 py-1 px-2 sm:py-2 sm:px-4 border border-primary-light rounded-full font-semibold font-inter"
@@ -245,7 +263,7 @@ export default function ProjectDetail() {
                             ))}
                             </div>
                         </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
                 <a

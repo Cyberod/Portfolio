@@ -14,7 +14,7 @@ export default function Home() {
                 {/* Hero Section */}
                 <div className="relative flex flex-col items-center justify-center">
                     <div className="absolute z-0 top-16 md:top-26  ">
-                        <img src="/Profile_image2.jpg" alt="Profile Image" className="w-[240px] md:w-[300px] lg:w-[360px]  rounded-2xl" />
+                        <img src="/Profile_image2.jpg" alt="Profile Image" className="w-[240px] md:w-[300px] lg:w-[360px]  rounded-2xl z-0" />
                     </div>
 
                     {/* Page Heading */}

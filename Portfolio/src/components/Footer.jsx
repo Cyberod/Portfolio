@@ -22,10 +22,9 @@ export default function Footer() {
   ];
 
   const socialIcons = [
-    { name: "Instagram", src: "/Insta.svg" },
-    { name: "Facebook", src: "/Facebook.svg" },
-    { name: "Github", src: "/Github.svg" },
-    { name: "LinkedIn", src: "/Linkedin.svg" },
+    { name: "Facebook", src: "/Facebook.svg", href: "https://web.facebook.com/jonaz.keez/" },
+    { name: "Github", src: "/Github.svg", href: "https://github.com/Cyberod" },
+    { name: "LinkedIn", src: "/Linkedin.svg", href: "https://www.linkedin.com/in/jonathan-ifeanyi-software-engineer/" },
   ];
 
   return (
@@ -55,7 +54,7 @@ export default function Footer() {
             {socialIcons.map((icon) => (
               <a
                 key={icon.name}
-                href="#"
+                href={icon.href}
                 className="hover:opacity-70 transition-opacity duration-300"
                 aria-label={icon.name}
               >
@@ -103,7 +102,7 @@ export default function Footer() {
               {socialIcons.map((icon) => (
                 <a
                   key={icon.name}
-                  href="#"
+                  href={icon.href}
                   className="hover:opacity-70 transition-opacity duration-300"
                   aria-label={icon.name}
                 >
@@ -152,7 +151,7 @@ export default function Footer() {
               {socialIcons.map((icon) => (
                 <a
                   key={icon.name}
-                  href="#"
+                  href={icon.href}
                   className="hover:opacity-70 transition-opacity duration-300"
                   aria-label={icon.name}
                 >

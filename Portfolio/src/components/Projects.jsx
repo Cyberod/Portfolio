@@ -66,9 +66,7 @@ export default function Projects() {
                   </h3>
                   <div className="lg:flex  justify-between gap-3 ">
 
-                  <Link to={`/project/${project.id}`}>
                     <ProjectCta  text="" className="" />
-                  </Link>                  
                   </div>
                 </div>
 

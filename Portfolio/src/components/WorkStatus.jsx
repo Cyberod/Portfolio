@@ -1,8 +1,11 @@
+
+import { Link } from "react-router-dom";
+
 export default function WorkStatus({href, text, download}) {
   return (
-        
-        <a
-        href={href}
+
+        <Link
+        to={href}
         download={download}
         className="w-[220px] md:w-[246px] text-center mt-4 text-[18px] bg-background-secondary flex border border-bg-primary-light p-3 rounded-full justify-center items-center gap-3 z-10 animate-breathe"
         >
@@ -16,6 +19,6 @@ export default function WorkStatus({href, text, download}) {
         </div>
 
         <span className="font-inter">{text}</span>
-        </a>
+        </Link>
     );
 }

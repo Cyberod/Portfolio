@@ -148,7 +148,7 @@ export default function ProjectDetail() {
 
                     <div className="flex flex-row gap-4">
                     <div className="text-[16px] mt-2">Industry:</div>
-                    <div className="flex flex-shrink-0">
+                    <div className="flex flex-shrink-0 w-[200px] sm:w-[400px] flex-wrap">
                         {project.industry.map((industry, idx) => (
                         <span key={idx} className="border border-white rounded-full px-4 py-2 text-white text-[16px]">
                             {industry}
@@ -248,7 +248,7 @@ export default function ProjectDetail() {
                                 {similar.name}
                             </h3>
                             <div className="lg:flex justify-between gap-3">
-                                <ProjectCta href={`/project/${similar.id}`} text="" className="" />
+                            <ProjectCta text="" className="" />
                             </div>
                             </div>
                             {/* Tech Stack */}

@@ -6,7 +6,7 @@ export default function Portfolio() {
   return (
         <section className="relative max-w-full flex flex-col items-center justify-center text-primary-light ">
             <div className="px-4 lg:px-8 xl:px-10">
-                <div className="relative flex flex-col items-center justify-center text-center mt-20">
+                <div className="relative flex flex-col items-center justify-center text-center mt-30">
                     <h1 className="text-[55px] sm:text-[80px] md:text-[95px] lg:text-[130px] xl:text-[150px] font-bold font-inter">
                     MY PORTFOLIO
                     </h1>

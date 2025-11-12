@@ -19,6 +19,7 @@ function App() {
       <div className="min-h-screen">
         <ScrollToTop />
         <Navbar />
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

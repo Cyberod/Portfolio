@@ -46,20 +46,20 @@ export default function Blog() {
       });
   }, []);
 
-  if (loading) return <p className="text-center mt-10">Loading posts...</p>;
-  if (error) return <p className="text-center mt-10 text-red-500">{error}</p>;
+  if (loading) return <p className="text-center top-30 absolute left-[40%] lg:left-[45%]">Loading posts...</p>;
+  if (error) return <p className="text-center top-30 absolute left-[40%] lg:left-[45%] text-red-500">{error}</p>;
 
   return (
             <section className="relative max-w-full flex flex-col items-center justify-center text-primary-light ">
                 <div className="px-4 lg:px-8 xl:px-10">
                     {/* Hero Section */}
-                    <div className="relative flex flex-col items-center justify-center text-center mt-20">
+                    <div className="relative flex flex-col items-center justify-center text-center mt-30">
                         <h1 className="text-[35px] sm:text-[60px] md:text-[75px] lg:text-[100px] xl:text-[120px] font-bold font-inter">
                         BLOG POSTS
                         </h1>
                     </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-20">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-20 ">
                       {posts.map((post) => (
                         <div
                           key={post.slug}

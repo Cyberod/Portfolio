@@ -50,7 +50,7 @@ export default function Contact() {
             <section className="relative max-w-full flex flex-col items-center justify-center text-primary-light ">
                 <div className="px-4 lg:px-8 xl:px-10">
                     {/* Hero Section */}
-                    <div className="relative flex flex-col items-center justify-center text-center mt-20">
+                    <div className="relative flex flex-col items-center justify-center text-center mt-30">
                         <h1 className="text-[35px] sm:text-[60px] md:text-[75px] lg:text-[100px] xl:text-[120px] font-bold font-inter">
                         CONTACT ME
                         </h1>

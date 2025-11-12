@@ -13,8 +13,8 @@ export default function Home() {
             <div className="px-4 lg:px-8 xl:px-10">
                 {/* Hero Section */}
                 <div className="relative flex flex-col items-center justify-center">
-                    <div className="absolute z-0 top-16 md:top-26  ">
-                        <img src="/Profile_image2.jpg" alt="Profile Image" className="w-[240px] md:w-[300px] lg:w-[360px]  rounded-2xl z-0" />
+                    <div className="absolute z-0 top-26 md:top-36  ">
+                        <img src="/Profile_image2.jpg" alt="Profile Image" className="w-[230px] md:w-[290px] lg:w-[350px]  rounded-2xl z-0" />
                     </div>
 
                     {/* Page Heading */}

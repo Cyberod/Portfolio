@@ -1,12 +1,17 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
 
   const getNavLinkClass = ({ isActive }) => `
     px-3 py-2 text-sm lg:text-base font-medium rounded-full border border-primary-light
-    ${isActive 
+    ${isActive
       ? "bg-primary-light text-primary-dark"
       : "text-primary-light hover:bg-primary-light hover:text-primary-dark transition-colors ease-in duration-400"
     }
@@ -14,18 +19,18 @@ export default function Navbar() {
 
   return (
     <nav className={`
-      bg-background-secondary 
-      relative z-50 top-6
-      border-none mx-4 lg:mx-10
-      ${isOpen ? 'rounded-4xl navbox-open transition-all duration-100 ease-in-out' : 'rounded-full'} navbox 
+      bg-background-primary
+      fixed z-50 
+      border-none w-full mx-auto px-4 lg:px-8 xl:px-10
+      ${isOpen ? 'rounded-4xl navbox-open transition-all duration-100 ease-in-out' : 'rounded-4xl'} 
     `}>
-      <div className="maxw-full mx-auto px-2 lg:px-5 ">
+      <div className="maxw-full mx-auto px-2 lg:px-5 bg-background-secondary mt-6 rounded-4xl navbox">
         <div className="flex flex-wrap items-center justify-between p-2.5">
           {/* Logo */}
           <div className="flex items-center">
             <span className="text-primary-light text-xl font-bold text-center p-1">
               JONATHAN
-            </span>
+            </span> 
           </div>
 
           {/* Mobile Menu Button */}

@@ -94,7 +94,7 @@ export default function ProjectDetail() {
   const { id } = useParams();
   const project = projects.find((p) => p.id === Number(id));
 
-  if (!project) return <div className="text-center mt-20 text-2xl">Project not found.</div>;
+  if (!project) return <div className="text-center mt-30 text-2xl">Project not found.</div>;
 
   return (
     <section className="w-full flex flex-col items-center ">

@@ -17,6 +17,8 @@ const projects = [
     industry: ["Entertainment", "Media"],
     stack: ["Django", "JavaScript", "TMDB API", "SQlite", "CSS"],
     date: "Dec. 2023 - March 2024",
+    github: "https://github.com/jonazkeez/cinemania",
+    live: "https://cinemania-demo.vercel.app",
     overview: "Cinemania is a dynamic web application built as a movie discovery platform, leveraging The Movie Database (TMDB) API to provide users with comprehensive access to film information. The app serves as an entertainment hub where users can explore, search, and learn about movies, with a special emphasis on Nigerian-language content (Igbo, Yoruba, Hausa) to promote local cinema.",
     keyFeatures: [
       "Movie Discovery Dashboard: Displays curated lists including popular, now-playing, upcoming, and top-rated movies with interactive sliders and banners.",
@@ -46,6 +48,8 @@ const projects = [
     industry: ["Technology", "Enterprise Solutions"],
     stack: ["Fastapi", "React", "Docker","PostgreSQL", "Swager UI" ],
     date: "March. 2025 - June 2025",
+    github: "https://github.com/jonazkeez/taskify",
+    live: "https://taskify-demo.vercel.app",
     overview: "Taskify is a collaborative Project management platform. It provides comprehensive services for user management, project collaboration, task tracking, file handling, and analytics.",
     keyFeatures: [
       "Authentication System: JWT-based authentication with user registration, email verification, OTP, password reset, and secure login/logout",
@@ -74,6 +78,8 @@ const projects = [
     industry: ["Fin-Tech"],
     stack: ["Django", "JavaScript", "TMDB API", "SQLite"],
     date: "Jan. 2025 - March 2025",
+    github: "https://github.com/jonazkeez/expensewise",
+    live: "https://expensewise-demo.vercel.app",
     overview: "ExpenseWise is a comprehensive web application designed for personal finance management, enabling users to track, categorize, and analyze their expenses and income. Built with Django, it offers an intuitive interface for managing financial records, generating visualizations, and exporting data in multiple formats, all while ensuring data privacy and security.",
     keyFeatures: [
       "Expense and Income Management: Add, edit, delete, and categorize financial records with pagination and search functionality.",
@@ -100,13 +106,36 @@ export default function ProjectDetail() {
     <section className="w-full flex flex-col items-center ">
         <div className="px-4 lg:px-8 xl:px-10 py-10">
             {/* Project Name */}
-            <h1 className="text-[35px] sm:text-[60px] md:text-[75px] lg:text-[100px] xl:text-[120px] font-bold font-inter text-center mb-6">
+            <h1 className="text-[35px] sm:text-[60px] md:text-[75px] lg:text-[100px] xl:text-[120px] font-bold font-inter text-center mb-6 mt-20">
                 {project.name}
             </h1>
             {/* Project Description */}
             <p className="max-w-[464px] text-center  text-primary-light text-[16px] md:text-[18px] mb-8 mx-auto">
                 {project.description}
             </p>
+            {/* Project Links */}
+            <div className="flex flex-col items-center sm:flex-row gap-4 justify-center mb-8">
+                <a
+                    /* href={project.github} */
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-[200px] flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary-light text-background-primary font-semibold hover:bg-primary-light/80 transition-colors"
+                >
+                    View Code
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a
+                    /* href={project.live} */
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-[200px] group flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-transparent border border-primary-light text-primary-light font-semibold hover:bg-primary-light hover:text-background-primary transition-all ease-in duration-500"
+                >
+                    Live Demo
+                    <img src="/arrow.svg" alt="" className="w-5 h-5 arrow-tilt group-hover:invert group-hover:rotate-[30deg]" />
+                </a>
+            </div>
             {/* Project Image */}
             <img
                 src={project.image}

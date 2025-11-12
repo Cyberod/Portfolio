@@ -1,4 +1,5 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
+import { useFormspark } from '@formspark/use-formspark';
 import Cta from "../components/Cta";
 import Footer from "../components/Footer";
 import SectionHeader from "../components/SectionHeader";
@@ -8,8 +9,9 @@ export default function Contact() {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
     const [errors, setErrors] = useState({});
     const [success, setSuccess] = useState(false);
-    const [loading, setLoading] = useState(false);
-    const formRef = useRef();
+    const [submit, submitting] = useFormspark({
+        formId: "xkg0g63jY",
+    });
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -34,23 +36,13 @@ export default function Contact() {
         if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors);
         } else {
-            setLoading(true);
             try {
-                const response = await fetch('https://submit-form.com/xkg0g63jY', {
-                    method: 'POST',
-                    body: new FormData(formRef.current),
-                });
-                if (response.ok) {
-                    setSuccess(true);
-                    setFormData({ name: '', email: '', message: '' });
-                    setTimeout(() => setSuccess(false), 5000);
-                } else {
-                    alert('Failed to send message. Please try again.');
-                }
+                await submit(formData);
+                setSuccess(true);
+                setFormData({ name: '', email: '', message: '' });
+                setTimeout(() => setSuccess(false), 5000);
             } catch (error) {
-                alert('Error sending message. Please try again.');
-            } finally {
-                setLoading(false);
+                alert('Failed to send message. Please try again.');
             }
         }
     };
@@ -97,7 +89,7 @@ export default function Contact() {
                         <SectionHeader title="Lets Collaborate" />
                         </div>
 
-                        <form ref={formRef} onSubmit={handleSubmit} className="w-full flex flex-col gap-6 font-inter">
+                        <form onSubmit={handleSubmit} className="w-full flex flex-col gap-6 font-inter">
 
                             {/* Success Notification */}
                             {success && (
@@ -167,10 +159,10 @@ export default function Contact() {
                             {/* Submit Button */}
                             <button
                             type="submit"
-                            disabled={loading}
+                            disabled={submitting}
                             className="mt-4 w-full px-8 py-3 rounded-full bg-primary-light text-background-primary font-semibold hover:bg-primary-light/80 transition disabled:opacity-50 disabled:cursor-not-allowed"
                             >
-                            {loading ? 'Sending...' : 'Send Message'}
+                            {submitting ? 'Sending...' : 'Send Message'}
                             </button>
                         </form>
 

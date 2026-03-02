@@ -7,26 +7,33 @@ import { Link } from "react-router-dom";
 
 export default function Projects() {
   const projects = [
-    {
+      {
       id: 1,
-      name: "Cinemania",
-      image: "/Cinemania.jpg",
-      stacks: ["Django", "React", "TMDB API"],
-      link: "",
+      name: "SupraMontem",
+      image: "/SupraMontem_Images/supra_1.png",
+      stacks: ["FastAPI", "PostgreSQL", "Docker", "Paystack", "WeasyPrint"],
+      link: "https://supramontem.com.ng/",
     },
     {
       id: 2,
-      name: "Taskify",
-      image: "Taskify/taskify2.png",
-      stacks: ["FastAPI", "React", "PostgreSQL"],
-      link: "",
+      name: "Cinemania",
+      image: "/Cinemania.jpg",
+      stacks: ["Django", "React", "TMDB API"],
+      link: "https://cinemania-73gx.onrender.com/",
     },
     {
       id: 3,
-      name: "Budget Automation",
+      name: "Taskify",
+      image: "Taskify/taskify2.png",
+      stacks: ["FastAPI", "React", "PostgreSQL"],
+      link: "https://https://taskify-seven-iota.vercel.app/",
+    },
+    {
+      id: 4,
+      name: "ExpenseWise",
       image: "ExpenseWise.jpg",
       stacks: ["Django", "GraphQL", "JWT"],
-      link: "",
+      link: "https://expensewise-kiym.onrender.com/",
     },
   ];
 

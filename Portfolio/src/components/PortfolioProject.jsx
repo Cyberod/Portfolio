@@ -5,25 +5,37 @@ import { Link } from "react-router-dom";
 
 export default function PortfolioProjects() {
   const projects = [
+
+
     {
+
+      
       id: 1,
+      name: "SupraMontem Attorneys",
+      image: "/SupraMontem_Images/supra_1.png",
+      stacks: ["Fastapi", "React", "Python","Docker"],
+      link: "",
+    },
+
+    {
+      id: 2,
       name: "Cinemania",
       image: "/Cinemania.jpg",
       stacks: ["Django", "React", "TMDB API"],
       link: "",
     },
     {
-      id: 2,
+      id: 3,
       name: "Taskify",
       image: "/Taskify/taskify2.png",
       stacks: ["FastAPI", "React", "PostgreSQL"],
       link: "",
     },
     {
-      id: 3,
-      name: "Budget Automation",
+      id: 4,
+      name: "ExpenseWise",
       image: "ExpenseWise.jpg",
-      stacks: ["Django", "GraphQL", "JWT"],
+      stacks: ["Django", "GraphQL", "JWT", "ES6"],
       link: "",
     },
   ];

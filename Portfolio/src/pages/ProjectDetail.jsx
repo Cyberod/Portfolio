@@ -186,18 +186,18 @@ export default function ProjectDetail() {
                 <div className="w-full flex flex-col gap-7">
 
                     <div className="flex flex-row gap-4">
-                    <div className="text-[16px]  mt-2">Role:</div>
+                    <div className="text-[16px]  mt-2 w-16 lg:w-28">Role:</div>
                     <div className="flex flex-wrap xl:flex-shrink-0">
                         {project.role.map((role, idx) => (
-                        <span key={idx} className="border border-white rounded-full px-4 py-2 text-white text-[16px]">
+                        <span key={idx} className="border border-white rounded-full px-4 py-2 my-1 text-white text-[16px]">
                             {role}
                         </span>
                         ))}
                     </div>
                     </div>
 
-                    <div className="flex flex-row gap-6">
-                    <div className="text-[16px] mt-2">Service:</div>
+                    <div className="flex flex-row gap-4">
+                    <div className="text-[16px] mt-2 w-16 lg:w-28">Service:</div>
                     <div className="flex flex-shrink-0  w-[200px] sm:w-[400px] flex-wrap">
                         {project.service.map((service, idx) => (
                         <span key={idx} className="border border-white rounded-full px-4 py-2 my-1 text-white text-[16px]">
@@ -208,7 +208,7 @@ export default function ProjectDetail() {
                     </div>
 
                     <div className="flex flex-row gap-4">
-                    <div className="text-[16px] mt-2">Industry:</div>
+                    <div className="text-[16px] mt-2 w-16 lg:w-28">Industry:</div>
                     <div className="flex flex-shrink-0 w-[200px] sm:w-[400px] flex-wrap">
                         {project.industry.map((industry, idx) => (
                         <span key={idx} className="border border-white rounded-full px-4 py-2 my-1 text-white text-[16px]">
@@ -219,7 +219,7 @@ export default function ProjectDetail() {
                     </div>
 
                     <div className="flex flex-row gap-4">
-                        <div className="text-[16px]  mt-2">Stack:</div>
+                        <div className="text-[16px]  mt-2 w-16 lg:w-28">Stack:</div>
                                 <div className="flex flex-shrink-0 w-[200px] sm:w-[400px] flex-wrap">
                                     {project.stack.map((stack, idx) => (
                                     <span key={idx} className="border border-white rounded-full px-4 py-2 my-1 text-white text-[16px]">
@@ -230,7 +230,7 @@ export default function ProjectDetail() {
                         </div>
 
                         <div className="flex flex-row gap-4">
-                            <div className="text-[16px] mt-2">Date:</div>
+                            <div className="text-[16px] mt-2 w-16 lg:w-28 xl:w-16">Date:</div>
                                 <div className="flex flex-shrink-0">
                                     <span className="border border-white rounded-full px-4 py-2 my-1 text-white text-[16px]">
                                         {project.date}

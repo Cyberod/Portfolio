@@ -9,8 +9,8 @@ const projects = [
   {
     id: 1,
     name: "SupraMontem Attorney",
-    image: "/SupraMontem/supramontem1.png",
-    images: ["/SupraMontem/supramontem1.png", "/SupraMontem/supramontem2.png", "/SupraMontem/supramontem3.png"],
+    image: "/SupraMontem_Images/supra_1.png",
+    images: ["/SupraMontem_Images/supra_2.png", "/SupraMontem_Images/supra_4.png", "/SupraMontem_Images/supra_8.png", "/SupraMontem_Images/supra_9.png"],
     description: "A legal document automation platform for law firms providing automated generation and delivery of legal documents.",
     role: ["Backend Developer", "API Developer"],
     service: ["Web Development", "Software Engineering", "Legal Tech", "API Development"],
@@ -147,8 +147,8 @@ export default function ProjectDetail() {
             </p>
             {/* Project Links */}
             <div className="flex flex-col items-center sm:flex-row gap-4 justify-center mb-8">
-                <a
-                    /* href={project.github} */
+                <Link
+                    to={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-[200px] flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary-light text-background-primary font-semibold hover:bg-primary-light/80 transition-colors"
@@ -157,16 +157,16 @@ export default function ProjectDetail() {
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                     </svg>
-                </a>
-                <a
-                    /* href={project.live} */
+                </Link>
+                <Link
+                    to={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-[200px] group flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-transparent border border-primary-light text-primary-light font-semibold hover:bg-primary-light hover:text-background-primary transition-all ease-in duration-500"
                 >
                     Live Demo
                     <img src="/arrow.svg" alt="" className="w-5 h-5 arrow-tilt group-hover:invert group-hover:rotate-[30deg]" />
-                </a>
+                </Link>
             </div>
             {/* Project Image */}
             <img
@@ -183,7 +183,7 @@ export default function ProjectDetail() {
                         <SectionHeader title="Details" className="text-center md:text-left" />
                     </div>
                 
-                <div className="w-full flex flex-col gap-4">
+                <div className="w-full flex flex-col gap-7">
 
                     <div className="flex flex-row gap-4">
                     <div className="text-[16px]  mt-2">Role:</div>
@@ -196,11 +196,11 @@ export default function ProjectDetail() {
                     </div>
                     </div>
 
-                    <div className="flex flex-row gap-4">
+                    <div className="flex flex-row gap-6">
                     <div className="text-[16px] mt-2">Service:</div>
                     <div className="flex flex-shrink-0  w-[200px] sm:w-[400px] flex-wrap">
                         {project.service.map((service, idx) => (
-                        <span key={idx} className="border border-white rounded-full px-4 py-2 myy-1 text-white text-[16px]">
+                        <span key={idx} className="border border-white rounded-full px-4 py-2 my-1 text-white text-[16px]">
                             {service}
                         </span>
                         ))}
@@ -211,7 +211,7 @@ export default function ProjectDetail() {
                     <div className="text-[16px] mt-2">Industry:</div>
                     <div className="flex flex-shrink-0 w-[200px] sm:w-[400px] flex-wrap">
                         {project.industry.map((industry, idx) => (
-                        <span key={idx} className="border border-white rounded-full px-4 py-2 text-white text-[16px]">
+                        <span key={idx} className="border border-white rounded-full px-4 py-2 my-1 text-white text-[16px]">
                             {industry}
                         </span>
                         ))}
@@ -222,7 +222,7 @@ export default function ProjectDetail() {
                         <div className="text-[16px]  mt-2">Stack:</div>
                                 <div className="flex flex-shrink-0 w-[200px] sm:w-[400px] flex-wrap">
                                     {project.stack.map((stack, idx) => (
-                                    <span key={idx} className="border border-white rounded-full px-4 py-2 text-white text-[16px]">
+                                    <span key={idx} className="border border-white rounded-full px-4 py-2 my-1 text-white text-[16px]">
                                         {stack}
                                     </span>
                                     ))}
@@ -232,7 +232,7 @@ export default function ProjectDetail() {
                         <div className="flex flex-row gap-4">
                             <div className="text-[16px] mt-2">Date:</div>
                                 <div className="flex flex-shrink-0">
-                                    <span className="border border-white rounded-full px-4 py-2 text-white text-[16px]">
+                                    <span className="border border-white rounded-full px-4 py-2 my-1 text-white text-[16px]">
                                         {project.date}
                                     </span>
                                 </div>
@@ -327,13 +327,13 @@ export default function ProjectDetail() {
                         </Link>
                     ))}
                 </div>
-                <a
-                    href="/projects"
+                <Link
+                    to="/projects"
                     className="group items-center gap-2 text-primary-light flex lg:hidden text-[15px] mt-6 xl:mt-0 transition-all underline underline-offset-5 duration-300"
                 >
                     More Projects
                     <img src="/arrow.svg" alt="" className="w-6 h-6 arrow-tilt group-hover:rotate-[30deg]" />
-                </a>
+                </Link>
                 </div>
         </div>
 

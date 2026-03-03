@@ -129,7 +129,8 @@ const projects = [
 ];
 
 export default function ProjectDetail() {
-  const { id } = useParams();
+  const params = useParams ? useParams() : {};
+  const id = params?.id;
   const project = projects.find((p) => p.id === Number(id));
 
   if (!project) return <div className="text-center mt-30 text-2xl">Project not found.</div>;

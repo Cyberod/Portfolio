@@ -9,7 +9,7 @@ const projects = [
   {
     id: 1,
     name: "SupraMontem Attorneys",
-    image: "/SupraMontem/supramontem1.png",
+    image: "/SupraMontem_Images/supra_1.png",
     images: ["/SupraMontem_Images/supra_4.png", "/SupraMontem_Images/supra_6.png", "/SupraMontem_Images/supra_8.png", "/SupraMontem_Images/supra_9.png"],
     description: "A legal document automation webapp for law firms providing automated generation and delivery of legal documents.",
     role: ["Fullstack Developer", "Project Manager"],
@@ -189,7 +189,7 @@ export default function ProjectDetail() {
                     <div className="text-[16px]  mt-2">Role:</div>
                     <div className="flex flex-wrap xl:flex-shrink-0">
                         {project.role.map((role, idx) => (
-                        <span key={idx} className="border border-white rounded-full px-4 py-2 text-white text-[16px]">
+                        <span key={idx} className="border border-white rounded-full px-4 py-2 my-1 text-white text-[16px]">
                             {role}
                         </span>
                         ))}
@@ -211,7 +211,7 @@ export default function ProjectDetail() {
                     <div className="text-[16px] mt-2">Industry:</div>
                     <div className="flex flex-shrink-0 w-[200px] sm:w-[400px] flex-wrap">
                         {project.industry.map((industry, idx) => (
-                        <span key={idx} className="border border-white rounded-full px-4 py-2 text-white text-[16px]">
+                        <span key={idx} className="border border-white rounded-full px-4 py-2 my-1 text-white text-[16px]">
                             {industry}
                         </span>
                         ))}
@@ -220,9 +220,9 @@ export default function ProjectDetail() {
 
                     <div className="flex flex-row gap-4">
                         <div className="text-[16px]  mt-2">Stack:</div>
-                                <div className="flex flex-shrink-0 w-[200px] sm:w-[400px] flex-wrap">
+                                <div className="flex flex-shrink-0 w-[200px] sm:w-[400px] flex-wrap ">
                                     {project.stack.map((stack, idx) => (
-                                    <span key={idx} className="border border-white rounded-full px-4 py-2 text-white text-[16px]">
+                                    <span key={idx} className="border border-white rounded-full px-4 py-2 my-1 text-white text-[16px]">
                                         {stack}
                                     </span>
                                     ))}
@@ -327,13 +327,13 @@ export default function ProjectDetail() {
                         </Link>
                     ))}
                 </div>
-                <a
-                    href="/projects"
+                <Link
+                    to="/projects"
                     className="group items-center gap-2 text-primary-light flex lg:hidden text-[15px] mt-6 xl:mt-0 transition-all underline underline-offset-5 duration-300"
                 >
                     More Projects
                     <img src="/arrow.svg" alt="" className="w-6 h-6 arrow-tilt group-hover:rotate-[30deg]" />
-                </a>
+                </Link>
                 </div>
         </div>
 

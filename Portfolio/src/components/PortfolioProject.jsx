@@ -13,7 +13,7 @@ export default function PortfolioProjects() {
       id: 1,
       name: "SupraMontem Attorneys",
       image: "/SupraMontem_Images/supra_1.png",
-      stacks: ["Fastapi", "React", "Python","Docker"],
+      stacks: ["Fastapi", "React", "Python","Docker", "Paystack", "WeasyPrint"],
       link: "",
     },
 

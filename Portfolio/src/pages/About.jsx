@@ -31,16 +31,14 @@ export default function About() {
 
                 <div className="flex flex-col items-center lg:items-start text-left gap-4 w-full">
                 <p className="text-primary-light text-[16px] md:text-[18px] font-inter leading-relaxed">
-                    I approach each project with meticulous attention to detail, striving to
-                    exceed expectations and deliver results that align with both the client's
-                    objectives and the latest industry standards.
+                   I treat every project as a business investment, because that’s what it is. My approach 
+                   combines technical depth with strategic thinking to deliver scalable, performance-driven 
+                   digital solutions that align with real-world objectives.
                 </p>
                 <p className="text-primary-light text-[16px] md:text-[18px] font-inter leading-relaxed">
-                    As I continue to evolve professionally, I remain committed to refining my
-                    craft and embracing new challenges. I am driven by a relentless pursuit of
-                    excellence and a desire to create meaningful impact through my work. Let's
-                    collaborate to bring your vision to life and shape the future of the web
-                    together.
+                    Growth and excellence are non-negotiable in my work. I continuously refine my systems,
+                    processes, and execution to ensure the solutions I build don’t just function, they perform. 
+                    If you're serious about leveraging technology to strengthen your business, I’m ready to help you make it happen.
                 </p>
                 </div>
             </div>

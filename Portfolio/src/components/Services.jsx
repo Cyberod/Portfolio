@@ -6,7 +6,8 @@ export default function Services() {
         { number: "02.", title: "Website Maintenance", description: "With my comprehensive website maintenance and support services, you can trust that your online presence is expertly cared for, allowing you to focus on what matters most." },
         { number: "03.", title: "Automation", description: "I streamline your workflows by implementing intelligent automation solutions that reduce manual tasks, minimize errors, and boost productivity across your operations." },
         { number: "04.", title: "SaaS Development", description: "I design and build scalable Software as a Service (SaaS) solutions tailored to your business needs, delivering flexible and efficient cloud-based applications that grow with you." },
-        { number: "05.", title: "Project Management", description: "With my project management expertise, I ensure timely delivery of projects, effective resource allocation, and clear communication to drive successful outcomes for your initiatives." }
+        { number: "05.", title: "DevOps", description: "I implement modern DevOps practices to ensure seamless deployment, continuous integration, performance monitoring, and infrastructure reliability, enabling faster releases and stable production environments." },
+        { number: "06.", title: "Project Management", description: "With my project management expertise, I ensure timely delivery of projects, effective resource allocation, and clear communication to drive successful outcomes for your initiatives." }
     ];
 
     return (

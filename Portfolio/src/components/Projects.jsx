@@ -11,7 +11,7 @@ export default function Projects() {
       id: 1,
       name: "SupraMontem",
       image: "/SupraMontem_Images/supra_1.png",
-      stacks: ["FastAPI", "PostgreSQL", "Docker", "Paystack", "WeasyPrint"],
+      stacks: ["FastAPI", "PostgreSQL", "Docker"],
       link: "https://supramontem.com.ng/",
     },
     {
@@ -94,14 +94,14 @@ export default function Projects() {
             </Link>
           ))}
         </div>
-          <a
-            href="/portfolio"
+          <Link
+            to="/portfolio"
             className="group  items-center gap-2 text-primary-light flex lg:hidden text-[15px] mt-6 xl:mt-0 transition-all underline underline-offset-5  duration-300"
           >
             More Projects
           <img src="/arrow.svg" alt="" className="w-6 h-6 arrow-tilt group-hover:rotate-[30deg] " />
 
-          </a>
+          </Link>
       </div>
 
     </section>

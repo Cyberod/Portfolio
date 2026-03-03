@@ -30,7 +30,9 @@ export default function Home() {
                     
                     {/* Hero Statement */}
                     <p className="max-w-full md:w-[560px] mt-6 text-center text-primary-light text-[16px] md:text-[18px]  ">
-                        I am a dedicated Software Engineer and Project Manager, deeply committed to the principles of result driven solutons. With more than 3 years of hands-on experience in the industry.
+                        I help businesses turn ideas into structured, high-performing digital solutions.
+                        With 3+ years of experience in software engineering and project delivery, 
+                        I build systems that improve operations, increase efficiency, and support long-term growth.
                     </p>
 
                     <ArrowLink href="/about" text="More About Me" className="flex justify-between mt-6 max-w-full" />

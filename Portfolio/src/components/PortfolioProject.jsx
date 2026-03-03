@@ -13,7 +13,7 @@ export default function PortfolioProjects() {
       id: 1,
       name: "SupraMontem Attorneys",
       image: "/SupraMontem_Images/supra_1.png",
-      stacks: ["Fastapi", "React", "Python","Docker", "Paystack", "WeasyPrint"],
+      stacks: ["Fastapi", "React", "Python","Docker"],
       link: "",
     },
 
@@ -33,7 +33,7 @@ export default function PortfolioProjects() {
     },
     {
       id: 4,
-      name: "ExpenseWise",
+      name: "Budget Automation",
       image: "ExpenseWise.jpg",
       stacks: ["Django", "GraphQL", "JWT", "ES6"],
       link: "",
@@ -74,9 +74,7 @@ export default function PortfolioProjects() {
                     {project.name}
                   </h3>
                   <div className="lg:flex  justify-between gap-3 ">
-                  <Link to={`/project/${project.id}`}>
                     <ProjectCta  text="" className="" />
-                  </Link>
                   
 
  

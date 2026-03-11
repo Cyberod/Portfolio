@@ -73,7 +73,7 @@ export default function Footer() {
           {/* Copyright & Created By - Justified */}
           <div className="flex flex-col items-center gap-2">
             <span className="text-sm text-center">Created by Jonathan</span>
-            <span className="text-sm text-center">© 2025 IFEANYI JONATHAN. All rights reserved.</span>
+            <span className="text-sm text-center">© {new Date().getFullYear()} IFEANYI JONATHAN. All rights reserved.</span>
           </div>
         </div>
 
@@ -122,7 +122,7 @@ export default function Footer() {
           {/* Copyright & Created By - Justified */}
           <div className="flex justify-between items-center">
             <span className="text-sm">Created by Jonathan</span>
-            <span className="text-sm">© 2025 IFEANYI JONATHAN. All rights reserved.</span>
+            <span className="text-sm">© {new Date().getFullYear()} IFEANYI JONATHAN. All rights reserved.</span>
           </div>
         </div>
 
@@ -171,7 +171,7 @@ export default function Footer() {
           {/* Copyright & Created By - Justified */}
           <div className="flex justify-between items-center">
             <span className="text-[16px]">Created by Jonathan</span>
-            <span className="text-[16px]">© 2025 IFEANYI JONATHAN. All rights reserved.</span>
+            <span className="text-[16px]">© {new Date().getFullYear()} IFEANYI JONATHAN. All rights reserved.</span>
           </div>
         </div>
       </div>

@@ -12,22 +12,22 @@ export default function Cta() {
         <div className="group relative inline-block overflow-hidden cursor-pointer mt-6">
           <span
             className="block text-center font-bold font-inter leading-tight
-              text-[30px] sm:text-[40px] md:text-[50px] lg:text-[70px] xl:text-[90px]
+              text-[30px] sm:text-[30px] md:text-[40px] lg:text-[45px] xl:text-[65px]
               text-primary-light whitespace-normal break-words transition-transform duration-500 ease-in-out group-hover:-translate-y-full"
           >
             <a href="mailto:jonazkeez@gmail.com">
-                JONAZKEEZ{""}<span className="block sm:inline">@GMAIL.COM</span>
+                IFEANYIJONATHAAN{""}<span className="block sm:inline">@GMAIL.COM</span>
 
             </a>          
             </span>
 
           <span
             className="block text-center font-bold font-inter leading-tight
-              text-[30px] sm:text-[40px] md:text-[50px] lg:text-[70px] xl:text-[90px]
+              text-[30px] sm:text-[30px] md:text-[40px] lg:text-[45px] xl:text-[65px]
               text-primary-light whitespace-normal break-words absolute top-full left-0 w-full transition-transform duration-500 ease-in-out group-hover:-translate-y-full"
           >
             <a href="mailto:jonazkeez@gmail.com">
-                JONAZKEEZ{""}<span className="block sm:inline">@GMAIL.COM</span>
+                IFEANYIJONATHAAN{""}<span className="block sm:inline">@GMAIL.COM</span>
 
             </a>
           </span>

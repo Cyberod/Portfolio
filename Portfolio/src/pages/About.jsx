@@ -1,6 +1,7 @@
 import TopClients from "../components/TopClients";
 import SectionHeader from "../components/SectionHeader";
 import Stats from "../components/Stats";
+import TestimonialHighlight from "../components/TestimonialHighlight";
 import Cta from "../components/Cta";
 import Footer from "../components/Footer";
 import WorkStatus from "../components/WorkStatus";
@@ -96,6 +97,8 @@ export default function About() {
 
                 </div>
             </div>
+
+            <TestimonialHighlight />
 
         </div>
 

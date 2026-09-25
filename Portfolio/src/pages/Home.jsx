@@ -3,6 +3,7 @@ import Stats from "../components/Stats";
 import Projects from "../components/Projects";
 import ArrowLink from "../components/ArrowLink";
 import Services from "../components/Services";
+import Testimonials from "../components/Testimonials";
 import Cta from "../components/Cta";
 import Footer from "../components/Footer";
 import WorkStatus from "../components/WorkStatus";
@@ -47,6 +48,7 @@ export default function Home() {
 
             <Projects />
             <Services />
+            <Testimonials />
             <Cta />
             <Footer/>
 
